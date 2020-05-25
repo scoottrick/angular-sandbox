@@ -1,2 +1,12 @@
-<sb-menubar></sb-menubar>
+<sb-menubar [menuItems]="menus">
+
+  <ng-template #menuHeaderTemplate let-item>
+    <span class="menu-header">
+        {{ item.name }}
+    </span>
+  </ng-template>
+
+</sb-menubar>
+
 <router-outlet></router-outlet>
+
